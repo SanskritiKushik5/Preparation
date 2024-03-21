@@ -9,3 +9,9 @@ bool isPalindrome(string& str) {
     if (!check(0, n-1, str)) return false;
     return true;
 }
+
+bool isPalindrome(string& str, int i=0) {
+    if(i>= str.length()) return true;
+    if(str[i] != str[str.length()-i-1]) return false;
+    return isPalindrome(str, i+1);
+}
