@@ -8,7 +8,7 @@ int find_slargest(vector<int> arr, int n){
         if(arr[i]>largest){
             slargest = largest;
             largest = arr[i];
-        } else if (arr[i]>slargest){
+        } else if (arr[i]>slargest && arr[i]<largest){
             slargest = arr[i];
         }
     }
