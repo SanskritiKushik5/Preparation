@@ -6,3 +6,11 @@ int getSingleElement(vector<int> &arr) {
 	}
 	return arr[arr.size()-1];
 }
+// another simplest xor soln
+int getSingleElement(vector<int> &arr) {
+	int xorr = 0;
+	for(int i=0; i<arr.size(); i++){
+		xorr = xorr ^ arr[i];
+	}
+	return xorr;
+}
